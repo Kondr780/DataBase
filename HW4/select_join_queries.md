@@ -182,7 +182,7 @@ FROM artist;
 
 
 
-\*\*Запрос 1. Вывести названия альбомов и годы выпуска под новыми именами столбцов.**
+**Запрос 1. Вывести названия альбомов и годы выпуска под новыми именами столбцов.**
 
 
 
@@ -206,7 +206,7 @@ SQL
 
 SELECT title AS album_title,
 
-&#x20;      release_year AS year_released
+     release_year AS year_released
 
 FROM album;
 
@@ -247,8 +247,7 @@ SQL
 ```
 
 SELECT title AS song_title,
-
-&#x20;      track_number AS song_number
+      track_number AS song_number
 
 FROM song;
 
@@ -296,9 +295,9 @@ SQL
 
 SELECT title,
 
-&#x20;      duration_sec,
+     duration_sec,
 
-&#x20;      duration_sec / 60.0 AS duration_min
+      duration_sec / 60.0 AS duration_min
 
 FROM song;
 
@@ -340,9 +339,9 @@ SQL
 
 SELECT name,
 
-&#x20;      formed_year,
+      formed_year,
 
-&#x20;      2026 - formed_year AS years_since_formed
+     2026 - formed_year AS years_since_formed
 
 FROM artist;
 
@@ -1473,9 +1472,9 @@ SQL
 
 SELECT a.title AS album_title,
 
-&#x20;      s.title AS song_title,
+     s.title AS song_title,
 
-&#x20;      s.track_number
+      s.track_number
 
 FROM album AS a
 
@@ -1573,9 +1572,9 @@ SQL
 
 SELECT a.title AS album_title,
 
-&#x20;      s.title AS song_title,
+      s.title AS song_title,
 
-&#x20;      s.track_number
+      s.track_number
 
 FROM album AS a
 
@@ -1627,7 +1626,7 @@ SQL
 
 SELECT ar.name AS artist_name,
 
-&#x20;      g.name AS genre_name
+      g.name AS genre_name
 
 FROM artist AS ar
 
@@ -1673,7 +1672,7 @@ SQL
 
 SELECT a.title AS album_title,
 
-&#x20;      g.name AS genre_name
+      g.name AS genre_name
 
 FROM album AS a
 
